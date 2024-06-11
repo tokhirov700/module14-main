@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulotlar boshqaruvi</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h1>Mahsulotlar boshqaruvi</h1>
+    <button id="addProductBtn" class="add-product-btn">Yangi mahsulot qo'shish</button>
+    <div id="productsContainer" class="products-container"></div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Yangi mahsulot qo'shish</h2>
+            <form class="modal-form">
+                <input type="hidden" class="product-id">
+                <label for="productName">Mahsulot nomi:</label>
+                <input type="text" id="productName" class="product-name" required>
+                <label for="productPrice">Narxi:</label>
+                <input type="number" id="productPrice" class="product-price" required>
+                <label for="productImage">Rasm URL:</label>
+                <input type="url" id="productImage" class="product-image" required>
+                <button type="submit">Saqlash</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
